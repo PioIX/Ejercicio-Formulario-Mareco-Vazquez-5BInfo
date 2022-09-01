@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "es">
+  <head>
+    <meta charset="utf-8"/>
+    <title> Registro </title>
+  </head>
+
+  <body>
+<form action="{{url_for('registro')}}" methods="POST">
+
+    <label for="nameRegistration">Nombre:</label>
+    <input type="text" id="name" name="nombreRegistro" /><br>
+  
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="contraseña"/><br>
+
+    <label for="paises">Elegí un país:</label><br>
+    <select name="pais" id="opciones">
+      <option value="arg">Argentina</option>
+      <option value="us">Estados Unidos</option>
+      <option value="ve">Venezuela</option>
+      <option value="uy">Uruguay</option>
+    </select> <br>
+
+    <input type="checkbox" id="cbox1" name= "check" value="checkbox">Acepto las bases y condiciones</label><br>
+    
+    <button type="submit" value="registrarse">Crear</button>
+  
+  </body>
+</html>
