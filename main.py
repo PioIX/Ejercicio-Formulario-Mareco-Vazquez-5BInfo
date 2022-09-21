@@ -6,7 +6,7 @@ app.secret_key = "clave_cualquiera"
 @app.route('/')
 def index():
     return render_template('home.html')
-  
+
 @app.route('/ingreso', methods=["GET", "POST"])
 def ingreso():
     if request.method == 'POST': 
